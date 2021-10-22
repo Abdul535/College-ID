@@ -103,7 +103,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                   var myValue = $(this).data('id');
                                         swal({
                                          title: "Are you sure?",
-                                         text: "You want to remove this staff from the database!",
+                                         text: "You want to remove this student from the database!",
                                          type: "warning",
                                          showCancelButton: true,
                                         cancelButtonColor: "red",
@@ -123,7 +123,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                                       data: { Valuedel: vals},
                                                       success: function(result) {
                                                       if(result=="ok"){
-                                                                    swal({title: "Deleted!", text: "Staff has been deleted from the database.", type: "success"},
+                                                                    swal({title: "Deleted!", text: "Student has been deleted from the database.", type: "success"},
                                                           function(){ 
                                                                           location.reload();
                                                                           }
@@ -174,7 +174,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <?php if(isset($_SESSION['memberadded'])){?>
  <script type="text/javascript"> 
  	          $(document).ready(function(){
- 	          	                             swal({title: "Successful!", text: "Staff added successfully!!.", type: "success"});
+ 	          	                             swal({title: "Successful!", text: "Student added successfully!!.", type: "success"});
                                   });
               </script>
             
@@ -184,7 +184,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 		    <?php if(isset($_SESSION['memberexist'])){?>
                 <script type="text/javascript"> 
             $(document).ready(function(){    	
-    				              sweetAlert("Oops...", "There is arleady a staff with those details in the database", "error");     				              
+    				              sweetAlert("Oops...", "There is arleady a student with those details in the database", "error");     				              
                                });
                 </script>
            <?php 
@@ -302,7 +302,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript"> 
 
 $(document).ready(function(){  
- 		                           swal({title: "Successful!", text: "Staff details edited!!.", type: "success"});
+ 		                           swal({title: "Successful!", text: "Student details edited!!.", type: "success"});
 
                                });
        
@@ -393,7 +393,7 @@ $retrieve = mysqli_query($db,$sqluse);
         		<p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">Department:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="minstitution"  id='cc'></span></p>
         	     <p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adm No:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mrank" id='dd'></span></p>
         	     <p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">&nbsp;Email:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="memail" id='bb'></span></p>
-        	     <p ><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp; &nbsp;&nbsp;Staff ID:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mid" id='oldpass'></span></p>
+        	     <p ><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp; &nbsp;&nbsp;Student ID:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mid" id='oldpass'></span></p>
         		Add profile picture:<input name='filed' type='file' id='filed' >
                 <input type="hidden" name="page" id="staffid"/>                                                       	      		
            
@@ -471,7 +471,7 @@ $retrieve = mysqli_query($db,$sqluse);
         		<p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">Department:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="minstitution"></span></p>
         	     <p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adm No:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="memail"></span></p>
         	     <p style="margin-bottom:10px;"><span style="font-size: 18px; font-weight: bold;">&nbsp;Email:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mphone"></span></p>
-        	     <p ><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp; &nbsp;&nbsp;Staff ID:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mpassword"></span></p>
+        	     <p ><span style="font-size: 18px; font-weight: bold;">&nbsp;&nbsp; &nbsp;&nbsp;Student ID:<label style="color: red;font-size:20px;">*</label><input style="width:270px;" type="text" name="mpassword"></span></p>
         		Add profile picture:<input name='filed' type='file' id='filed' >
                     
         		   <input type="hidden" name="page" value="admin.php"/>                                                        	      		
